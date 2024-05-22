@@ -1,0 +1,105 @@
+body {
+  background-color: #999999;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+.content {
+  border: 2px solid black;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.table-head {
+  font-weight: bold;
+}
+
+header {
+  font-family: "Droid Sans Mono", monospace;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+header a {
+  color: #111111;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+header a:hover {
+  border-bottom: 2px solid #222222;
+}
+
+footer {
+  font-family: "Droid Sans Mono", monospace;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* Klasa contrast */
+body.contrast {
+  background-color: black;
+  color: yellow;
+}
+
+.contrast .content {
+  border-color: yellow;
+  font-size: 1.2em;
+}
+
+.contrast .table-head {
+  font-weight: bold;
+  color: yellow;
+}
+
+.contrast .table-body {
+  color: yellow;
+}
+
+.contrast header {
+  font-size: 1.5em;
+}
+
+.contrast footer {
+  font-size: 1em;
+}
+
+.contrast header a {
+  color: #ffc800;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+.contrast header a:hover {
+  border-bottom: 2px solid #ffc800;
+}
+/* Zwiększenie specyficzności selektorów dla przycisków paginacji */
+.table-content .pagination .page-item .page-link {
+  background-color: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
+
+.table-content .pagination .page-item .page-link:hover {
+  background-color: #222222;
+  border-color: #222222;
+  color: #ffffff;
+}
+
+.table-content .pagination .page-item.active .page-link {
+  background-color: #ffc800;
+  border-color: #ffc800;
+  color: #111111;
+}
+
